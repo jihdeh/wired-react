@@ -1,5 +1,7 @@
 # React assessment
 
+![](toggler.gif)
+
 You are going to build a re-usable `Toggler` component responsible for toggling something ON or OFF.
 
 To toggle between ON or OFF there is a `TogglerButton`. 
