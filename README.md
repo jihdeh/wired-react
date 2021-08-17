@@ -10,6 +10,13 @@ To show the correct UI dependening on the toggler state there are `TogglerOn` an
 
 In this excercise the component is used to toggle a setting but the same component could be re-used for things like an accordion, inline edit, etc.
 
+The code of this assessment can be found in `src/App.js`
+
+## Running the app
+```
+npm start
+```
+
 I'm looking forward to your solution!
 
 Best regards,
