@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react'
+import {Switch} from './switch'
+import {SettingRow, SettingRowContent, SettingRowActions, SettingRowTitle} from "./settingRow"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function Toggler({children}) {
+  // todo, implement this re-usable component.
+  return children
 }
 
-export default App;
+function TogglerOn({children}) {
+  // todo, implement this re-usable component.
+  return children
+}
+
+function TogglerOff({children}) {
+  // todo, implement this re-usable component.
+  return children
+}
+
+function TogglerButton() {
+  // todo, implement this re-usable component.
+  const toDoSwitchProps = {on: true, onClick: null}
+  return <Switch {...toDoSwitchProps} />
+}
+
+function App() {
+  return (    
+      <SettingRow>
+        <Toggler>
+          <SettingRowContent>
+            <SettingRowTitle>Some setting</SettingRowTitle>
+            <TogglerOn>Is enabled</TogglerOn>
+            <TogglerOff>Is disabled</TogglerOff>
+          </SettingRowContent>
+          <SettingRowActions>
+            <TogglerButton />
+          </SettingRowActions>
+        </Toggler>
+      </SettingRow>    
+  )
+}
+
+export default App
